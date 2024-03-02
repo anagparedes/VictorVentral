@@ -1,0 +1,6 @@
+@VictorVentralCustomer.API_HostAddress = http://localhost:5014
+
+GET {{VictorVentralCustomer.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
