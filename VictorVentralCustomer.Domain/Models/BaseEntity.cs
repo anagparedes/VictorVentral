@@ -2,7 +2,7 @@
 
 namespace VictorVentralCustomer.Domain.Models
 {
-    public class BaseEntity : IBase
+    public abstract class BaseEntity : IBase
     {
         public Guid Id { get; set; }
         public bool IsDeleted { get; set; }
