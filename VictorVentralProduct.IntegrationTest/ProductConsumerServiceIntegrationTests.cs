@@ -2,10 +2,9 @@ using Microsoft.Azure.ServiceBus;
 using System.Text;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
-using VictorVentralProduct.Application.Products.Dtos;
 using Microsoft.Extensions.Logging;
-using VictorVentralProduct.Application;
-using VictorVentralProduct.Application.Products.ServiceBus.Contracts;
+using VictorVentralProduct.Infraestructure;
+using VictorVentralProduct.Infraestructure.ServiceBus.Contracts;
 
 namespace VictorVentralProduct.IntegrationTest
 {
@@ -18,7 +17,7 @@ namespace VictorVentralProduct.IntegrationTest
 
             var serviceProvider = new ServiceCollection()
                 .AddLogging(builder => builder.AddConsole())
-                .AddApplication()
+                .AddRepositories()
                 .AddServiceBus(configuration)
                 .AddSingleton<ITopicClient>(x =>
                     new TopicClient(

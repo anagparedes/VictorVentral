@@ -3,7 +3,7 @@ using Microsoft.Extensions.Hosting;
 using Newtonsoft.Json;
 using System.Text;
 
-namespace VictorVentralProduct.Application.Products.ServiceBus
+namespace VictorVentralProduct.Infraestructure.ServiceBus
 {
     public abstract class BaseConsumerService<T> : BackgroundService
     {

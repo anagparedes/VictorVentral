@@ -7,7 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Azure.Messaging.ServiceBus" Version="7.17.3" />
+    <PackageReference Include="Azure.ResourceManager.ServiceBus" Version="1.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Authorization" Version="8.0.2" />
+    <PackageReference Include="Microsoft.Azure.ServiceBus" Version="5.2.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Abstractions" Version="8.0.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.2">
